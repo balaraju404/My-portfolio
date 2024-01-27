@@ -13,7 +13,7 @@
     #navbar {
         z-index: 1;
         position: fixed;
-        height: 12vh;
+        height: 10vh;
         width: 110vw;
         display: flex;
         align-items: center;
@@ -32,21 +32,21 @@
     
     #navbarList {
         height: 100%;
-        width: 50vw;
+        width: 60vw;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
     }
     
     i {
-        font-size: 4px;
+        font-size: 7px;
         color: white;
     }
     
     a {
         text-decoration: none;
         color: white;
-        font-size: 4px;
+        font-size: 7px;
         letter-spacing: 0.2px;
         transition: all 1s;
     
@@ -140,6 +140,7 @@
     #Services #ServicesAbout #title{
         margin-top: 11vh;
         font-size: 20px;
+        font-weight: bold;
     }
     
     #Services #ServicesList{
@@ -163,7 +164,11 @@
         border-radius: 10px;
         margin: 10px 0;
     }
-    
+    #Services #ServicesList>div>div{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
     #Services i{
         color: black;
         padding: 5px;
@@ -183,8 +188,10 @@
     }
     
     #Services #ServicesList>div li{
+        margin: 0 7px 2px;
         text-align: justify;
         line-height: 20px;
+        font-size: 14px;
     }
     
     #Services #ServicesList>div>div>p{
@@ -370,9 +377,12 @@
     }
     
     footer #links{
-        width: 10%;
+        width: 20%;
         display: flex;
         justify-content: space-evenly;
+    }
+    footer i{
+        font-size: 20px;
     }
     
     
