@@ -188,7 +188,9 @@
     }
     
     #Services #ServicesList>div li{
+        color:rgba(0, 255, 255, 0.748);
         margin: 0 7px 2px;
+        word-spacing: 0px;
         text-align: justify;
         line-height: 20px;
         font-size: 14px;
