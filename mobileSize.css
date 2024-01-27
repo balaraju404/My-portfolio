@@ -1,0 +1,379 @@
+@media only screen and (max-width: 600px) {
+
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    * {
+        margin: 0;
+        padding: 0;
+        /* color: white; */
+    }
+    
+    #navbar {
+        z-index: 1;
+        position: fixed;
+        height: 12vh;
+        width: 110vw;
+        display: flex;
+        align-items: center;
+        background-image: linear-gradient(rgb(17, 16, 15), rgb(33, 27, 27));
+        box-shadow: 0 5px 5px black;
+    }
+    
+    #navbar #name {
+        height: 100%;
+        width: 50vw;
+        font-size: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #navbarList {
+        height: 100%;
+        width: 50vw;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    i {
+        font-size: 4px;
+        color: white;
+    }
+    
+    a {
+        text-decoration: none;
+        color: white;
+        font-size: 4px;
+        letter-spacing: 0.2px;
+        transition: all 1s;
+    
+    }
+    
+    #underline {
+        /* margin-left: 1px; */
+        height: 0.5px;
+        width: 0%;
+        background-color: white;
+        transition: all 0.5s;
+    }
+    
+    h1 {
+        color: white;
+    }
+    
+    span {
+        color: red;
+    }
+    
+    #navbar a:hover {
+       transform: scale(1.5);
+    }
+    
+    a:hover #underline {
+        width: 100%;
+    }
+    
+    /* home */
+    #Home {
+        height: 110vh;
+        width: 110vw;
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+        background-color: rgb(33, 31, 31);
+        letter-spacing: 2px;
+    
+    }
+    
+    #homeContent {
+        overflow: hidden;
+        height: 300px;
+        margin-left: 70px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    
+    #homeContent>div{
+        display: flex;
+    }
+    
+    #homeContent #name {
+        display: flex;
+        flex-direction: row;
+        justify-content: baseline;
+        color: red;
+        font-size: 30px;
+        letter-spacing: 2px;
+        /* overflow: hidden; */
+    }
+    
+    #homeContent #Portfolio {
+        width: max-content;
+        padding: 5px 10px;
+        color: white;
+        font-style: italic;
+        border: 1px solid red;
+    }
+    
+    #Services{
+        /* height: 100vh; */
+        width: 110vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #Services #ServicesAbout{
+        height: 35vh;
+        width: 80vw;
+        text-align: justify;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    #Services #ServicesAbout #title{
+        margin-top: 11vh;
+        font-size: 20px;
+    }
+    
+    #Services #ServicesList{
+        height: 60vh;
+        width: 110vw;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-bottom: 20px;
+    }
+    #Services #ServicesList>div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        color: white;
+        height: 50%;
+        width: 50vw;
+        background-color: rgb(21, 21, 57);
+        border-radius: 10px;
+        margin: 10px 0;
+    }
+    
+    #Services i{
+        color: black;
+        padding: 5px;
+        font-size: 20px;
+        background-color: rgb(248, 227, 165);
+        border-radius: 100%;
+    }
+    
+    #Services #ServicesList>div>div+div{
+        height: 75%;
+        margin: 0 10px;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items:flex-start;
+        justify-content: flex-start;
+    }
+    
+    #Services #ServicesList>div li{
+        text-align: justify;
+        line-height: 20px;
+    }
+    
+    #Services #ServicesList>div>div>p{
+        text-align: center;
+        font-weight: bold;
+        font-size: 15px;
+    }
+    
+    /* Projects */
+    #Projects{
+        height: max-content;
+        width: 110vw;
+    }
+    
+    #Projects>h3{
+        padding-top: 15vh;
+        margin-bottom: 10vh;
+        text-align: center;
+    }
+    
+    #ProjectsList{
+        width: 110vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #ProjectsList>div{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 0 1px black;
+    }
+    
+    .projectDetails{
+        color: rgba(255, 255, 255, 0.792);
+        width: 100vw;
+        background-color: rgb(21, 21, 57);
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    .projectDetails>h4{
+        margin-left: 5px;
+        color: rgb(53, 214, 13);
+        text-shadow: 1px 1px 1px black;
+        text-align: left;
+        font-size: 25px;
+        letter-spacing: 5px;
+    }
+    
+    .projectDetails>p{
+        height: 70%;
+        width: 90%;
+        text-align: justify;
+        text-indent: 100px;
+        padding: 10px 0;
+    }
+    
+    .projectOutput{
+        overflow-x: hidden;
+        overflow-y: scroll;
+        height: 200px;
+        width: 100vw;
+        background-color: black;
+    }
+    .projectOutput iframe{
+        height: 100%;
+        width: 100%;
+    }
+    .projectOutput img{
+        height: 100%;
+        width: 100%;
+        /* filter: blur(1px) ; */
+        transition: all 0.5s;
+    }
+    .projectOutput img:hover{
+        filter: blur(0);
+        transform: scale(1.2);
+    }
+
+    #Projects>#ProjectsList>div:nth-child(even){
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    /* About Me */
+    #AboutMe{
+        padding-top: 20vh;
+        height: 80vh;
+        width: 110vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #AboutMe>#photo{
+        height: 400px;
+        width: 300px;
+        border: 5px solid red;
+    }
+    #AboutMe img{
+        height: 400px;
+        width: 300px;
+        border: 5px solid white;
+        transform: translate(20px,-20px);
+    }
+    #AboutMe>#details{
+        height: 600px;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #AboutMe>#details>h4{
+        font-size: 30px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid black;
+    }
+    #AboutMe>#details>h5{
+        font-size: 15px;
+        padding-bottom: 15px;
+    }
+    #AboutMe>#details>p{
+        font-size: 11px;
+        text-indent: 100px;
+        text-align: justify;
+    }
+    
+    /* Contact */
+    #Contact{
+        height: 70vh;
+        width: 110vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;
+    }
+    
+    #Contact>h2{
+        font-size: 30px;
+        margin-bottom: 50px;
+        border-bottom: 1px solid black;
+    }
+    
+    #contactDetails{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    
+    #contactDetails>div{
+        width: 90%;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        margin: 20px;
+    }
+    
+    #contactDetails>div>img{
+        height: 50px;
+        width: 60px;
+        padding-top: 20px;
+        margin-right: 20px;
+    }
+    
+    #contactDetails>div h3{
+        margin-bottom: 10px;
+        border-bottom: 2px solid black;
+    }
+    
+    /* Footer */
+    footer{
+        color: white;
+        height: 20vh;
+        width: 110vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: black;
+    }
+    
+    footer #links{
+        width: 10%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    
+}
