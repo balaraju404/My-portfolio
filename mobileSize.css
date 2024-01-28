@@ -3,79 +3,106 @@
     html {
         scroll-behavior: smooth;
     }
-    
+
     * {
         margin: 0;
         padding: 0;
         /* color: white; */
     }
-    
+
     #navbar {
         z-index: 1;
         position: fixed;
-        height: 10vh;
+        height: 9vh;
         width: 110vw;
         display: flex;
         align-items: center;
         background-image: linear-gradient(rgb(17, 16, 15), rgb(33, 27, 27));
         box-shadow: 0 5px 5px black;
     }
-    
+
     #navbar #name {
         height: 100%;
-        width: 40vw;
-        font-size: 5px;
-        display: flex;
+        width: 100vw;
+        font-size: 8px;
+        display: n;
         justify-content: center;
         align-items: center;
     }
-    
+
     #navbarList {
-        height: 100%;
-        width: 60vw;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
+        display: none;
     }
-    
-    i {
-        font-size: 7px;
-        color: white;
-    }
-    
-    a {
-        text-decoration: none;
-        color: white;
-        font-size: 7px;
-        letter-spacing: 0.2px;
-        transition: all 1s;
-    
-    }
-    
-    #underline {
-        /* margin-left: 1px; */
-        height: 0.5px;
-        width: 0%;
-        background-color: white;
-        transition: all 0.5s;
-    }
-    
+
     h1 {
         color: white;
     }
-    
+
     span {
         color: red;
     }
-    
-    #navbar a:hover {
-       transform: scale(1.2);
+
+    #navbar>#bars {
+        display: flex;
     }
-    
-    a:hover #underline {
-        width: 100%;
+
+    /* sidebar */
+    #sidebar {
+        z-index: 3;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        right: 0;
+        height: 70vh;
+        width: 0;
+        background-color: rgb(0, 0, 0);
+        transition: all 0.5s;
     }
-    
+
+    #sidebar a {
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+        letter-spacing: 1px;
+        transition: all 1s;
+    }
+
+    #sidebar>#close {
+        display: none;
+        justify-content: flex-end;
+    }
+
+    #sidebar>#close>i {
+        font-size: 30px;
+        margin: 30px;
+    }
+
+    #sidebar>#sidebarList {
+        margin-left: 30px;
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    #sidebar>#sidebarList>a {
+        width: fit-content;
+        padding: 5px 7px;
+        word-spacing: 10px;
+    }
+
+    #sidebar>#sidebarList>a:hover {
+        letter-spacing: 5px;
+        background-color: bisque;
+        color: rgb(255, 0, 0);
+        text-shadow: 1px 1px .5px black;
+    }
+
+    #sidebar>#sidebarList>a:hover>i {
+        color: yellow;
+        text-shadow: 1px 1px .5px black;
+    }
+
     /* home */
     #Home {
         height: 110vh;
@@ -85,9 +112,9 @@
         align-items: center;
         background-color: rgb(33, 31, 31);
         letter-spacing: 2px;
-    
+
     }
-    
+
     #homeContent {
         overflow: hidden;
         height: 300px;
@@ -96,11 +123,11 @@
         flex-direction: column;
         justify-content: space-evenly;
     }
-    
-    #homeContent>div{
+
+    #homeContent>div {
         display: flex;
     }
-    
+
     #homeContent #name {
         display: flex;
         flex-direction: row;
@@ -110,7 +137,7 @@
         letter-spacing: 2px;
         /* overflow: hidden; */
     }
-    
+
     #homeContent #Portfolio {
         width: max-content;
         padding: 5px 10px;
@@ -118,16 +145,16 @@
         font-style: italic;
         border: 1px solid red;
     }
-    
-    #Services{
+
+    #Services {
         /* height: 100vh; */
         width: 110vw;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    
-    #Services #ServicesAbout{
+
+    #Services #ServicesAbout {
         height: 35vh;
         width: 80vw;
         text-align: justify;
@@ -136,15 +163,15 @@
         align-items: center;
         justify-content: space-evenly;
     }
-    
-    #Services #ServicesAbout #title{
+
+    #Services #ServicesAbout #title {
         margin-top: 11vh;
         font-size: 20px;
         font-weight: bold;
     }
-    
-    #Services #ServicesList{
-        height: 60vh;
+
+    #Services #ServicesList {
+        height: 75vh;
         width: 110vw;
         display: flex;
         flex-wrap: wrap;
@@ -152,7 +179,8 @@
         justify-content: space-evenly;
         margin-bottom: 20px;
     }
-    #Services #ServicesList>div{
+
+    #Services #ServicesList>div {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -164,71 +192,75 @@
         border-radius: 10px;
         margin: 10px 0;
     }
-    #Services #ServicesList>div>div{
+
+    #Services #ServicesList>div>div {
         display: flex;
         justify-content: space-evenly;
         align-items: center;
     }
-    #Services i{
+
+    #Services i {
         color: black;
         padding: 5px;
         font-size: 20px;
         background-color: rgb(248, 227, 165);
         border-radius: 100%;
     }
-    
-    #Services #ServicesList>div>div+div{
+
+    #Services #ServicesList>div>div+div {
         height: 75%;
         margin: 0 10px;
         width: 90%;
         display: flex;
         flex-direction: column;
-        align-items:flex-start;
+        align-items: flex-start;
         justify-content: flex-start;
     }
-    
-    #Services #ServicesList>div li{
-        color:rgba(0, 255, 255, 0.748);
+
+    #Services #ServicesList>div li {
+        color: rgba(0, 255, 255, 0.748);
         margin: 0 7px 2px;
         word-spacing: 0px;
+        /* text-wrap:pretty; */
+        word-wrap: break-word;
         text-align: justify;
         line-height: 20px;
         font-size: 14px;
     }
-    
-    #Services #ServicesList>div>div>p{
+
+    #Services #ServicesList>div>div>p {
         text-align: center;
         font-weight: bold;
         font-size: 15px;
     }
-    
+
     /* Projects */
-    #Projects{
+    #Projects {
         height: max-content;
         width: 110vw;
     }
-    
-    #Projects>h3{
+
+    #Projects>h3 {
         padding-top: 15vh;
         margin-bottom: 10vh;
         text-align: center;
     }
-    
-    #ProjectsList{
+
+    #ProjectsList {
         width: 110vw;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    
-    #ProjectsList>div{
+
+    #ProjectsList>div {
         width: 100vw;
         display: flex;
         flex-direction: column;
         box-shadow: 0 0 1px black;
     }
-    
-    .projectDetails{
+
+    .projectDetails {
         color: rgba(255, 255, 255, 0.792);
         width: 100vw;
         background-color: rgb(21, 21, 57);
@@ -236,8 +268,8 @@
         align-items: center;
         justify-content: space-evenly;
     }
-    
-    .projectDetails>h4{
+
+    .projectDetails>h4 {
         margin-left: 5px;
         color: rgb(53, 214, 13);
         text-shadow: 1px 1px 1px black;
@@ -245,129 +277,139 @@
         font-size: 25px;
         letter-spacing: 5px;
     }
-    
-    .projectDetails>p{
+
+    .projectDetails>p {
         height: 70%;
         width: 90%;
         text-align: justify;
         text-indent: 100px;
         padding: 10px 0;
     }
-    
-    .projectOutput{
+
+    .projectOutput {
         overflow-x: hidden;
         overflow-y: scroll;
         height: 200px;
         width: 100vw;
         background-color: black;
     }
-    .projectOutput iframe{
+
+    .projectOutput iframe {
         height: 100%;
         width: 100%;
     }
-    .projectOutput img{
+
+    .projectOutput img {
         height: 100%;
         width: 100%;
         /* filter: blur(1px) ; */
         transition: all 0.5s;
     }
-    .projectOutput img:hover{
+
+    .projectOutput img:hover {
         filter: blur(0);
         transform: scale(1.2);
     }
 
-    #Projects>#ProjectsList>div:nth-child(even){
+    #Projects>#ProjectsList>div:nth-child(even) {
         display: flex;
         flex-direction: column-reverse;
     }
-    
+
     /* About Me */
-    #AboutMe{
-        padding-top: 20vh;
-        height: 80vh;
+    #AboutMe {
+        padding-top: 15vh;
+        height: max-content;
         width: 110vw;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    #AboutMe>#photo{
-        height: 400px;
-        width: 300px;
+
+    #AboutMe>#photo {
+        height: 30vh;
+        width: 46vw;
         border: 5px solid red;
+        margin-bottom: 5vh;
     }
-    #AboutMe img{
-        height: 400px;
-        width: 300px;
-        border: 5px solid white;
-        transform: translate(20px,-20px);
+
+    #AboutMe img {
+        height: 30vh;
+        width: 48vw;
+        border: 2vw solid white;
+        transform: translate(2vh, -3vh);
     }
-    #AboutMe>#details{
-        height: 600px;
+
+    #AboutMe>#details {
+        height: 50%;
         width: 100vw;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
-    #AboutMe>#details>h4{
+
+    #AboutMe>#details>h4 {
         font-size: 30px;
         margin-bottom: 20px;
         border-bottom: 1px solid black;
     }
-    #AboutMe>#details>h5{
+
+    #AboutMe>#details>h5 {
         font-size: 15px;
         padding-bottom: 15px;
     }
-    #AboutMe>#details>p{
+
+    #AboutMe>#details>p {
         font-size: 11px;
         text-indent: 100px;
         text-align: justify;
     }
-    
+
     /* Contact */
-    #Contact{
-        height: 70vh;
+    #Contact {
+        height: 80vh;
         width: 110vw;
         display: flex;
         flex-direction: column;
-        justify-content: center; 
+        justify-content: center;
         align-items: center;
     }
-    
-    #Contact>h2{
+
+    #Contact>h2 {
         font-size: 30px;
         margin-bottom: 50px;
         border-bottom: 1px solid black;
     }
-    
-    #contactDetails{
+
+    #contactDetails {
         width: 100vw;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
     }
-    
-    #contactDetails>div{
+
+    #contactDetails>div {
         width: 90%;
         display: flex;
         justify-content: left;
         align-items: center;
         margin: 20px;
     }
-    
-    #contactDetails>div>img{
+
+    #contactDetails>div>img {
         height: 50px;
         width: 60px;
         padding-top: 20px;
         margin-right: 20px;
     }
-    
-    #contactDetails>div h3{
+
+    #contactDetails>div h3 {
         margin-bottom: 10px;
         border-bottom: 2px solid black;
     }
-    
+
     /* Footer */
-    footer{
+    footer {
         color: white;
         height: 20vh;
         width: 110vw;
@@ -377,15 +419,16 @@
         align-items: center;
         background-color: black;
     }
-    
-    footer #links{
+
+    footer #links {
         width: 20%;
         display: flex;
         justify-content: space-evenly;
     }
-    footer i{
+
+    footer i {
         font-size: 20px;
     }
-    
-    
+
+
 }
