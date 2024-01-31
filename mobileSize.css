@@ -10,6 +10,33 @@
         /* color: white; */
     }
 
+    #video{
+        z-index: 5;
+        position: fixed;
+        height: 110vh;
+        width: 110vw;
+        display: flex;
+        align-items: center;
+        background-color: black;
+        animation: close 0.5s 4s forwards;
+    }
+    
+    video{
+        width: 99vw;
+        transform: scale(1.4) translateX(4vw);
+    }
+    
+    @keyframes close {
+        from{
+            transform: translateX(0);
+        }
+        to{
+            transform: translateX(110vw);
+            opacity: 0;
+            display: none;
+        }
+    }
+
     #navbar {
         z-index: 1;
         position: fixed;
@@ -222,7 +249,7 @@
         margin: 0 7px 2px;
         word-spacing: 0px;
         /* text-wrap:pretty; */
-        word-wrap: break-word;
+        /* word-wrap: break-word; */
         text-align: justify;
         line-height: 20px;
         font-size: 14px;
@@ -345,7 +372,7 @@
         width: 100vw;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-evenly;
     }
 
     #AboutMe>#details>h4 {
