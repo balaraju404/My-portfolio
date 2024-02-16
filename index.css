@@ -5,13 +5,7 @@ html {
 * {
     margin: 0;
     padding: 0;
-    /* color: white; */
 }
-
-body {
-    height: 600vh;
-}
-
 
 #video{
     z-index: 5;
@@ -258,36 +252,39 @@ a:hover #underline {
 
 .projectDetails {
     color: rgba(255, 255, 255, 0.792);
+    height: 60vh;
     width: 50%;
     background-color: rgb(21, 21, 57);
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding-bottom: 1%;
 }
 
 .projectDetails>h4 {
-    margin-left: -100px;
+    /* margin-left: -50px; */
     color: rgb(53, 214, 13);
     text-shadow: 1px 1px 1px black;
-    text-align: left;
+    text-align: center;
     font-size: 30px;
     letter-spacing: 5px;
 }
 
 .projectDetails>p {
-    height: 70%;
+    /* height: 70%; */
     width: 90%;
     text-align: justify;
     text-indent: 100px;
 }
 
 .projectOutput {
-    overflow-x: hidden;
-    overflow-y: scroll;
-    height: 400px;
+    overflow: hidden;
+    height: 62vh;
     width: 50%;
-    background-color: black;
+    /* background-color: black; */
 }
 
 .projectOutput iframe {
@@ -304,7 +301,7 @@ a:hover #underline {
 
 .projectOutput img:hover {
     filter: blur(0);
-    transform: scale(1.2);
+    /* transform: scale(1.2); */
 }
 
 /* About Me */
