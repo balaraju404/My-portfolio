@@ -295,7 +295,7 @@
     }
 
     .projectDetails>h4 {
-        /* margin-left: 5px; */
+        margin: 0 2px;
         color: rgb(53, 214, 13);
         text-shadow: 1px 1px 1px black;
         text-align: center;

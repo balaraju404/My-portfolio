@@ -186,7 +186,7 @@ a:hover #underline {
 #Services #ServicesList>div {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
     align-items: center;
     color: white;
     height: 100%;
@@ -204,8 +204,8 @@ a:hover #underline {
 }
 
 #Services #ServicesList>div>div {
-    height: 40%;
-    margin: 0 10px;
+    /* height: 40%; */
+    margin: 15px 10px;
     width: 90%;
 }
 
