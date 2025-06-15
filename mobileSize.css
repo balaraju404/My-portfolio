@@ -9,6 +9,7 @@
   padding: 0;
  }
 
+ /* ================== Video Intro ================== */
  #video {
   z-index: 5;
   position: fixed;
@@ -16,20 +17,16 @@
   width: 100dvw;
   display: flex;
   align-items: center;
-  background-color: black;
+  background: black;
   animation: close 0.5s 4s forwards;
  }
 
  video {
-  width: 99dvw;
+  width: 100%;
   transform: scale(1.4) translate(4dvw, -2vh);
  }
 
  @keyframes close {
-  from {
-   transform: translateX(0);
-  }
-
   to {
    transform: translateX(110dvw);
    opacity: 0;
@@ -37,74 +34,59 @@
   }
  }
 
+ /* ================== Navbar ================== */
  #navbar {
   z-index: 1;
   position: fixed;
+  top: 0;
   height: 9vh;
-  width: 100dvw;
+  width: 100%;
   display: flex;
   align-items: center;
-  background-image: linear-gradient(rgb(17, 16, 15), rgb(33, 27, 27));
+  background: linear-gradient(rgb(17, 16, 15), rgb(33, 27, 27));
   box-shadow: 0 1vh 1vh black;
  }
 
  #navbar #name {
-  height: 100%;
-  width: 100dvw;
+  flex: 1;
   font-size: 1.5vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
+  color: white;
  }
 
  #navbarList {
   display: none;
  }
 
- h1 {
-  color: white;
- }
-
- span {
-  color: red;
- }
-
- #navbar>#bars {
+ #navbar #bars {
   display: flex;
  }
 
- /* sidebar */
+ /* ================== Sidebar ================== */
  #sidebar {
   z-index: 3;
-  display: flex;
-  flex-direction: column;
   position: fixed;
+  top: 0;
   right: 0;
   height: 70vh;
   width: 0;
-  background-color: rgb(0, 0, 0);
+  background: black;
+  display: flex;
+  flex-direction: column;
   transition: all 0.5s;
  }
 
- #sidebar a {
-  text-decoration: none;
-  color: white;
-  font-size: 2vh;
-  letter-spacing: 0.1vh;
-  transition: all 1s;
- }
-
- #sidebar>#close {
+ #sidebar #close {
   display: none;
   justify-content: flex-end;
  }
 
- #sidebar>#close>i {
+ #sidebar #close i {
   font-size: 4vh;
   margin: 4vh;
  }
 
- #sidebar>#sidebarList {
+ #sidebar #sidebarList {
   margin-left: 5vh;
   height: 70%;
   display: flex;
@@ -112,247 +94,152 @@
   justify-content: space-evenly;
  }
 
- #sidebar>#sidebarList>a {
-  width: fit-content;
+ #sidebar a {
+  font-size: 2vh;
+  color: white;
+  text-decoration: none;
   padding: 1.5vh 2vh;
-  word-spacing: 2.5vh;
+  transition: all 0.3s;
  }
 
- #sidebar>#sidebarList>a:hover {
-  letter-spacing: 0.7vh;
-  background-color: bisque;
-  color: rgb(255, 0, 0);
-  text-shadow: 1px 1px .5px black;
+ #sidebar a:hover {
+  background: bisque;
+  color: red;
+  text-shadow: 1px 1px 0.5px black;
  }
 
- #sidebar>#sidebarList>a:hover>i {
+ #sidebar a:hover i {
   color: yellow;
-  text-shadow: 1px 1px .5px black;
  }
 
- /* home */
+ /* ================== Home ================== */
  #Home {
   height: 100dvh;
-  width: 100dvw;
   display: flex;
-  /* justify-content: center; */
   align-items: center;
-  background-color: rgb(33, 31, 31);
+  background: #211f1f;
+  color: white;
   letter-spacing: 2px;
-
  }
 
  #homeContent {
-  overflow: hidden;
   height: 300px;
   margin-left: 8vh;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
- }
-
- #homeContent>div {
-  display: flex;
+  overflow: hidden;
  }
 
  #homeContent #name {
-  display: flex;
-  flex-direction: row;
-  justify-content: baseline;
-  color: red;
   font-size: 4vh;
-  letter-spacing: 2px;
+  color: red;
  }
 
  #homeContent #Portfolio {
-  width: max-content;
   padding: 5px 10px;
   color: white;
   font-style: italic;
   border: 1px solid red;
  }
 
+ /* ================== Services ================== */
  #Services {
-  /* height: 100vh; */
-  width: 100dvw;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
  }
 
  #Services #ServicesAbout {
-  height: 35vh;
-  width: 80dvw;
+  width: 80%;
+  margin-top: 11vh;
   text-align: justify;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
  }
 
- #Services #ServicesAbout #title {
-  margin-top: 11vh;
+ #Services #title {
   font-size: 20px;
   font-weight: bold;
  }
 
  #Services #ServicesList {
-  height: 75vh;
-  width: 110vw;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: space-evenly;
-  margin-bottom: 20px;
+  width: 100%;
+  margin: 20px 0;
  }
 
  #Services #ServicesList>div {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  color: white;
-  height: 50%;
-  width: 50dvw;
-  background-color: rgb(21, 21, 57);
+  width: 45%;
+  padding: 10px;
+  background: #151539;
   border-radius: 10px;
-  margin: 10px 0;
+  color: white;
  }
 
- #Services #ServicesList>div>div {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
- }
-
- #Services i {
-  color: black;
-  padding: 5px;
-  font-size: 20px;
-  background-color: rgb(248, 227, 165);
-  border-radius: 100%;
- }
-
- #Services #ServicesList>div>div+div {
-  height: 75%;
-  margin: 0 10px;
-  width: 90%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
- }
-
- #Services #ServicesList>div li {
-  color: rgba(0, 255, 255, 0.748);
-  margin: 0 7px 2px;
-  word-spacing: 0px;
-  /* text-wrap:pretty; */
-  /* word-wrap: break-word; */
-  text-align: justify;
-  line-height: 20px;
+ #Services li {
   font-size: 14px;
+  line-height: 20px;
+  color: cyan;
+  margin-bottom: 2px;
  }
 
- #Services #ServicesList>div>div>p {
-  text-align: center;
-  font-weight: bold;
-  font-size: 15px;
- }
-
- /* Projects */
+ /* ================== Projects ================== */
  #Projects {
-  height: max-content;
-  width: 100dvw;
- }
-
- #Projects>h3 {
   padding-top: 15vh;
-  margin-bottom: 10vh;
   text-align: center;
  }
 
  #ProjectsList {
-  width: 110vw;
   display: flex;
   flex-direction: column;
   align-items: center;
  }
 
  #ProjectsList>div {
-  width: 100dvw;
-  display: flex;
-  flex-direction: column;
+  width: 100%;
   box-shadow: 0 0 1px black;
  }
 
  .projectDetails {
-  color: rgba(255, 255, 255, 0.792);
-  width: 100vw;
-  background-color: rgb(21, 21, 57);
-  display: flex;
-  align-items: center;
-  /* justify-content: space-evenly; */
+  background: #151539;
+  color: white;
+  padding: 10px;
  }
 
- .projectDetails>h4 {
-  margin: 0 2px;
-  color: rgb(53, 214, 13);
-  text-shadow: 1px 1px 1px black;
-  text-align: center;
+ .projectDetails h4 {
   font-size: 25px;
-  letter-spacing: 5px;
- }
-
- .projectDetails>p {
-  /* height: 70%; */
-  width: 90%;
-  text-align: justify;
-  text-indent: 100px;
-  padding: 10px 0;
+  color: limegreen;
+  text-shadow: 1px 1px black;
  }
 
  .projectOutput {
-  overflow-x: hidden;
-  overflow-y: scroll;
   height: 200px;
-  width: 100dvw;
-  background-color: black;
- }
-
- .projectOutput iframe {
-  height: 100%;
-  width: 100%;
+  overflow-y: scroll;
+  background: black;
  }
 
  .projectOutput img {
-  height: 100%;
   width: 100%;
-  /* filter: blur(1px) ; */
-  transition: all 0.5s;
+  height: 100%;
+  transition: transform 0.5s;
  }
 
  .projectOutput img:hover {
-  filter: blur(0);
   transform: scale(1.2);
  }
 
- #Projects>#ProjectsList>div:nth-child(even) {
-  display: flex;
-  flex-direction: column-reverse;
- }
-
- /* About Me */
+ /* ================== About Me ================== */
  #AboutMe {
   padding-top: 15vh;
-  height: max-content;
-  width: 100dvw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: center;
  }
 
- #AboutMe>#photo {
+ #AboutMe #photo {
   height: 30vh;
   width: 46dvw;
   border: 5px solid red;
@@ -360,100 +247,76 @@
  }
 
  #AboutMe img {
-  height: 30vh;
-  width: 48dvw;
+  width: 100%;
+  height: 100%;
   border: 2vw solid white;
-  transform: translate(2vh, -3vh);
  }
 
- #AboutMe>#details {
-  height: 50%;
-  width: 100dvw;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+ #AboutMe #details {
+  padding: 0 10px;
  }
 
- #AboutMe>#details>h4 {
+ #AboutMe #details h4 {
   font-size: 30px;
-  margin-bottom: 20px;
   border-bottom: 1px solid black;
  }
 
- #AboutMe>#details>h5 {
-  font-size: 15px;
-  padding-bottom: 15px;
- }
-
- #AboutMe>#details>p {
+ #AboutMe #details p {
   font-size: 11px;
-  text-indent: 100px;
   text-align: justify;
+  text-indent: 50px;
  }
 
- /* Contact */
+ /* ================== Contact ================== */
  #Contact {
   height: 80vh;
-  width: 100dvw;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
  }
 
- #Contact>h2 {
+ #Contact h2 {
   font-size: 30px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   border-bottom: 1px solid black;
  }
 
  #contactDetails {
-  width: 100dvw;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+  width: 100%;
+  padding: 0 10px;
  }
 
  #contactDetails>div {
-  width: 90%;
+  margin: 20px 0;
   display: flex;
-  justify-content: left;
   align-items: center;
-  margin: 20px;
  }
 
- #contactDetails>div>img {
+ #contactDetails img {
   height: 50px;
   width: 60px;
-  padding-top: 20px;
   margin-right: 20px;
  }
 
- #contactDetails>div h3 {
-  margin-bottom: 10px;
-  border-bottom: 2px solid black;
- }
-
- /* Footer */
+ /* ================== Footer ================== */
  footer {
-  margin-bottom: 35vh;
+  background: black;
   color: white;
   height: 20vh;
-  width: 100dvw;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
   align-items: center;
-  background-color: black;
+  justify-content: space-evenly;
  }
 
  footer #links {
-  width: 20%;
   display: flex;
   justify-content: space-evenly;
+  width: 60%;
  }
 
  footer i {
   font-size: 20px;
  }
+
 }
