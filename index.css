@@ -45,6 +45,22 @@ video {
  }
 }
 
+#sidebar {
+ display: none;
+}
+
+.sub-header {
+ padding: 2rem;
+ padding-top: 7rem;
+}
+
+.sub-header .title {
+ font-size: 1.6rem;
+ font-weight: 600;
+ border-bottom: 1px solid white;
+ margin-bottom: 2rem;
+}
+
 /* ========= Navigation Bar ========= */
 #navbar {
  z-index: 10;
@@ -65,7 +81,7 @@ video {
 }
 
 #navbar #name {
- font-size: 1.5rem;
+ font-size: .8rem;
  font-weight: bold;
 }
 
@@ -104,19 +120,17 @@ video {
 
 /* ========= Home Section ========= */
 #Home {
- height: 100vh;
  width: 100vw;
  display: flex;
  align-items: center;
  background-color: #211f1f;
- padding: 0 2rem;
 }
 
 #homeContent {
  display: flex;
  flex-direction: column;
- gap: 2rem;
- margin-left: 10vw;
+ gap: .5rem;
+ margin-left: 5rem;
 }
 
 #homeContent #name {
@@ -134,95 +148,97 @@ video {
 
 /* ========= Services ========= */
 #Services {
- padding: 5vh 2rem;
  display: flex;
  flex-direction: column;
  align-items: center;
 }
 
-#Services #ServicesAbout {
- text-align: center;
- margin-bottom: 4rem;
-}
-
-#Services #title {
- font-size: 2rem;
- font-weight: bold;
- margin-bottom: 1rem;
-}
-
 #Services #ServicesList {
  display: flex;
- gap: 2rem;
  flex-wrap: wrap;
- justify-content: center;
+ justify-content: space-between;
+ gap: 1rem;
  width: 100%;
 }
 
-#Services #ServicesList>div {
+#Services #ServicesList .card {
  background-color: #151539;
- padding: 2rem 1rem;
- border-radius: 10px;
- width: 300px;
+ padding: 2rem;
+ border-radius: 1rem;
+ width: 100%;
+ max-width: 27rem;
  text-align: center;
  color: white;
 }
 
-#Services i {
- font-size: 2.5rem;
- background: rgb(248, 227, 165);
- color: black;
- padding: 0.8rem;
- border-radius: 50%;
+#ServicesList .card .card-header {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ column-gap: 1rem;
+ row-gap: 2rem;
  margin-bottom: 1rem;
 }
 
-#Services li {
- line-height: 2rem;
+#Services i {
+ font-size: 1rem;
+ background: rgb(248, 227, 165);
+ color: black;
+ padding: 0.3rem;
+ border-radius: 50%;
 }
+
+#Services ol {
+ list-style-position: inside;
+}
+
+#Services li {
+ text-align: left;
+ line-height: 2rem;
+ margin-bottom: .5rem;
+ color: cyan;
+}
+
 
 /* ========= Projects ========= */
 #Projects {
- padding: 10vh 2rem 5vh;
-}
-
-#Projects>h3 {
- font-size: 2rem;
- text-align: center;
- margin-bottom: 5vh;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
 }
 
 #ProjectsList {
  display: flex;
  flex-wrap: wrap;
- gap: 2rem;
  justify-content: center;
+ gap: 2rem;
+ width: 100%;
 }
 
-.card {
- background: white;
- color: #333;
- padding: 1.5rem;
- border-radius: 10px;
+#ProjectsList .card {
+ padding: 2rem;
+ border-radius: 1rem;
  width: 100%;
- max-width: 500px;
+ max-width: 27rem;
+ background: white;
+ color: #444;
  transition: all 0.3s ease;
  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.card:hover {
- transform: translateY(-5px);
- box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-}
-
-.card h3 {
+#ProjectsList .card .card-header {
+ text-align: center;
+ color: #333;
  margin-bottom: 1rem;
 }
 
-.card .tech-stack {
- margin-top: 1rem;
+#ProjectsList .card .tech-stack {
  font-size: 0.9rem;
  color: #444;
+ display: flex;
+ flex-direction: column;
+ gap: .2rem;
+ margin-top: 1rem;
 }
 
 /* ========= Project View ========= */
@@ -269,17 +285,30 @@ video {
 /* ========= About Me ========= */
 #AboutMe {
  display: flex;
+ flex-direction: column;
  justify-content: space-around;
  align-items: center;
- padding: 5vh 2rem;
  flex-wrap: wrap;
 }
 
+#AboutMe>div {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-wrap: wrap;
+ gap: 1rem;
+}
+
+#photo {
+ border: .4rem solid red;
+ margin-top: 5rem;
+ margin-right: 2rem;
+}
+
 #photo img {
- border: 5px solid white;
- transform: translate(20px, -20px);
- width: 300px;
- height: 400px;
+ border: .4rem solid white;
+ transform: translate(1.8rem, -1.7rem);
+ width: 15rem;
 }
 
 #details {
@@ -320,7 +349,6 @@ video {
 
 /* ========= Contact ========= */
 #Contact {
- padding: 5vh 2rem;
  display: flex;
  flex-direction: column;
  align-items: center;
@@ -341,28 +369,50 @@ video {
 }
 
 #contactDetails>div {
- text-align: center;
  width: 250px;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ gap: 1rem;
 }
 
 #contactDetails img {
- height: 50px;
- width: 50px;
+ height: 2rem;
+ width: 2rem;
  object-fit: contain;
+}
+
+.thanks {
+ margin-top: 2rem;
+ text-align: justify;
+ font-size: .8rem;
 }
 
 /* ========= Footer ========= */
 footer {
- background: black;
- color: white;
- padding: 2rem;
  display: flex;
  flex-direction: column;
  align-items: center;
  gap: 1rem;
+ background: black;
+ color: white;
+ padding: 1rem;
 }
 
 footer #links {
  display: flex;
  gap: 1rem;
+}
+
+footer i {
+ font-size: 1rem;
+ color: white;
+}
+
+
+/* re usable */
+.card:hover {
+ transform: translateY(-5px);
+ box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }

@@ -1,8 +1,8 @@
 [
  {
   "id": 1,
-  "title": "Restaurant Application",
-  "description": "This is a restaurant application",
+  "title": "Restaurant Web Application",
+  "description": "This is a restaurant web application",
   "url": "https://restaurant-ang.vercel.app",
   "teck_stack": [
    {
@@ -31,6 +31,36 @@
  },
  {
   "id": 2,
+  "title": "Restaurant Mobile App",
+  "description": "This is a restaurant mobile application",
+  "url": "https://gbr-food-app.vercel.app",
+  "teck_stack": [
+   {
+    "id": 1,
+    "cat_name": "Front End",
+    "skills": [
+     "Ionic (Angular)"
+    ]
+   },
+   {
+    "id": 2,
+    "cat_name": "Backend End",
+    "skills": [
+     "Node.js",
+     "Express"
+    ]
+   },
+   {
+    "id": 3,
+    "cat_name": "Database",
+    "skills": [
+     "MongoDB"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 3,
   "title": "Personal Portfolio",
   "description": "This is a personal portfolio application",
   "url": "https://balarajugandham.netlify.app/",

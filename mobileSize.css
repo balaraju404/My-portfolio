@@ -113,196 +113,14 @@
  }
 
  /* ================== Home ================== */
- #Home {
-  height: 100dvh;
-  display: flex;
-  align-items: center;
-  background: #211f1f;
-  color: white;
-  letter-spacing: 2px;
- }
 
  #homeContent {
-  height: 300px;
-  margin-left: 8vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  overflow: hidden;
- }
-
- #homeContent #name {
-  font-size: 4vh;
-  color: red;
- }
-
- #homeContent #Portfolio {
-  padding: 5px 10px;
-  color: white;
-  font-style: italic;
-  border: 1px solid red;
- }
-
- /* ================== Services ================== */
- #Services {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
- }
-
- #Services #ServicesAbout {
-  width: 80%;
-  margin-top: 11vh;
-  text-align: justify;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
- }
-
- #Services #title {
-  font-size: 20px;
-  font-weight: bold;
- }
-
- #Services #ServicesList {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  width: 100%;
-  margin: 20px 0;
- }
-
- #Services #ServicesList>div {
-  width: 45%;
-  padding: 10px;
-  background: #151539;
-  border-radius: 10px;
-  color: white;
- }
-
- #Services li {
-  font-size: 14px;
-  line-height: 20px;
-  color: cyan;
-  margin-bottom: 2px;
- }
-
- /* ================== Projects ================== */
- #Projects {
-  padding-top: 15vh;
-  text-align: center;
- }
-
- #ProjectsList {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
- }
-
- #ProjectsList>div {
-  width: 100%;
-  box-shadow: 0 0 1px black;
- }
-
- .projectDetails {
-  background: #151539;
-  color: white;
-  padding: 10px;
- }
-
- .projectDetails h4 {
-  font-size: 25px;
-  color: limegreen;
-  text-shadow: 1px 1px black;
- }
-
- .projectOutput {
-  height: 200px;
-  overflow-y: scroll;
-  background: black;
- }
-
- .projectOutput img {
-  width: 100%;
-  height: 100%;
-  transition: transform 0.5s;
- }
-
- .projectOutput img:hover {
-  transform: scale(1.2);
- }
-
- /* ================== About Me ================== */
- #AboutMe {
-  padding-top: 15vh;
-  text-align: center;
- }
-
- #AboutMe #photo {
-  height: 30vh;
-  width: 46dvw;
-  border: 5px solid red;
-  margin-bottom: 5vh;
- }
-
- #AboutMe img {
-  width: 100%;
-  height: 100%;
-  border: 2vw solid white;
- }
-
- #AboutMe #details {
-  padding: 0 10px;
- }
-
- #AboutMe #details h4 {
-  font-size: 30px;
-  border-bottom: 1px solid black;
- }
-
- #AboutMe #details p {
-  font-size: 11px;
-  text-align: justify;
-  text-indent: 50px;
- }
-
- /* ================== Contact ================== */
- #Contact {
-  height: 80vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
- }
-
- #Contact h2 {
-  font-size: 30px;
-  margin-bottom: 30px;
-  border-bottom: 1px solid black;
- }
-
- #contactDetails {
-  width: 100%;
-  padding: 0 10px;
- }
-
- #contactDetails>div {
-  margin: 20px 0;
-  display: flex;
-  align-items: center;
- }
-
- #contactDetails img {
-  height: 50px;
-  width: 60px;
-  margin-right: 20px;
+  margin-left: 2rem;
  }
 
  /* ================== Footer ================== */
  footer {
-  background: black;
-  color: white;
-  height: 20vh;
+  height: 10rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -313,10 +131,6 @@
   display: flex;
   justify-content: space-evenly;
   width: 60%;
- }
-
- footer i {
-  font-size: 20px;
  }
 
 }
