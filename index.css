@@ -45,8 +45,8 @@ video {
 #navbar {
  z-index: 1;
  position: fixed;
- height: 12vh;
- width: 100vw;
+ height: 12dvh;
+ width: 100dvw;
  display: flex;
  align-items: center;
  background-image: linear-gradient(rgb(17, 16, 15), rgb(33, 27, 27));
@@ -55,7 +55,7 @@ video {
 
 #navbar #name {
  height: 100%;
- width: 50vw;
+ width: 50dvw;
  font-size: 15px;
  display: flex;
  justify-content: center;
@@ -64,7 +64,7 @@ video {
 
 #navbarList {
  height: 100%;
- width: 50vw;
+ width: 50dvw;
  display: flex;
  justify-content: space-evenly;
  align-items: center;
@@ -111,7 +111,7 @@ a:hover #underline {
 /* home */
 #Home {
  height: 100vh;
- width: 99vw;
+ width: 99dvw;
  display: flex;
  /* justify-content: center; */
  align-items: center;
@@ -154,7 +154,7 @@ a:hover #underline {
 /* Services */
 #Services {
  /* height: 100vh; */
- width: 99vw;
+ width: 99dvw;
  display: flex;
  flex-direction: column;
  align-items: center;
@@ -162,7 +162,7 @@ a:hover #underline {
 
 #Services #ServicesAbout {
  height: 35vh;
- width: 40vw;
+ width: 40dvw;
  display: flex;
  flex-direction: column;
  align-items: center;
@@ -177,7 +177,7 @@ a:hover #underline {
 
 #Services #ServicesList {
  height: 60vh;
- width: 99vw;
+ width: 99dvw;
  display: flex;
  align-items: center;
  justify-content: space-evenly;
@@ -190,7 +190,7 @@ a:hover #underline {
  align-items: center;
  color: white;
  height: 100%;
- width: 30vw;
+ width: 30dvw;
  background-color: rgb(21, 21, 57);
  border-radius: 10px;
 }
@@ -225,7 +225,7 @@ a:hover #underline {
 /* Projects */
 #Projects {
  height: max-content;
- width: 99vw;
+ width: 99dvw;
 }
 
 #Projects>h3 {
@@ -236,18 +236,67 @@ a:hover #underline {
 }
 
 #ProjectsList {
- width: 99vw;
+ width: 99dvw;
  display: flex;
- flex-direction: column;
  align-items: center;
+ flex-wrap: wrap;
+ gap: 1rem;
+ padding: 1rem;
 }
 
-#ProjectsList>div {
+#ProjectsList .card {
+ width: 90%;
+ max-width: 600px;
+ border-radius: 8px;
+ box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ padding: 1rem;
+ background-color: #fff;
+ transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#ProjectsList .card:hover {
+ transform: translateY(-4px);
+ box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+ margin: 0 0 0.5rem 0;
+ font-size: 1.3rem;
+ color: #333;
+}
+
+.card p {
+ margin: 0 0 0.8rem 0;
+ color: #555;
+}
+
+.card a {
+ color: #007bff;
+ text-decoration: none;
+ font-weight: 500;
+}
+
+.card a:hover {
+ text-decoration: underline;
+}
+
+.card .tech-stack {
+ margin-top: 1rem;
+}
+
+.stack-category {
+ margin-bottom: 0.4rem;
+ font-size: 0.95rem;
+ color: #444;
+}
+
+
+/* #ProjectsList>div {
  width: 80vw;
  display: flex;
  box-shadow: 0 0 2px black;
- /* border: 2px solid rgb(255, 255, 255); */
-}
+ border: 2px solid rgb(255, 255, 255);
+} */
 
 .projectDetails {
  color: rgba(255, 255, 255, 0.792);
@@ -303,7 +352,7 @@ a:hover #underline {
 /* About Me */
 #AboutMe {
  height: 100vh;
- width: 99vw;
+ width: 99dvw;
  display: flex;
  justify-content: space-evenly;
  align-items: center;
@@ -324,7 +373,7 @@ a:hover #underline {
 
 #AboutMe>#details {
  height: 600px;
- width: 50vw;
+ width: 50dvw;
  display: flex;
  flex-direction: column;
  justify-content: center;
@@ -363,7 +412,7 @@ a:hover #underline {
 /* Contact */
 #Contact {
  height: 100vh;
- width: 99vw;
+ width: 99dvw;
  display: flex;
  flex-direction: column;
  justify-content: space-evenly;
@@ -378,7 +427,7 @@ a:hover #underline {
 }
 
 #contactDetails {
- width: 80vw;
+ width: 80dvw;
  display: flex;
  justify-content: space-evenly;
 }
@@ -404,7 +453,7 @@ a:hover #underline {
 footer {
  color: white;
  height: 20vh;
- width: 99vw;
+ width: 99dvw;
  display: flex;
  flex-direction: column;
  justify-content: space-evenly;
