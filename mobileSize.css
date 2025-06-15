@@ -12,8 +12,8 @@
  #video {
   z-index: 5;
   position: fixed;
-  height: 110vh;
-  width: 110vw;
+  height: 100dvh;
+  width: 100dvw;
   display: flex;
   align-items: center;
   background-color: black;
@@ -21,8 +21,8 @@
  }
 
  video {
-  width: 99vw;
-  transform: scale(1.4) translate(4vw, -2vh);
+  width: 99dvw;
+  transform: scale(1.4) translate(4dvw, -2vh);
  }
 
  @keyframes close {
@@ -31,7 +31,7 @@
   }
 
   to {
-   transform: translateX(110vw);
+   transform: translateX(110dvw);
    opacity: 0;
    display: none;
   }
@@ -41,7 +41,7 @@
   z-index: 1;
   position: fixed;
   height: 9vh;
-  width: 110vw;
+  width: 100dvw;
   display: flex;
   align-items: center;
   background-image: linear-gradient(rgb(17, 16, 15), rgb(33, 27, 27));
@@ -50,7 +50,7 @@
 
  #navbar #name {
   height: 100%;
-  width: 100vw;
+  width: 100dvw;
   font-size: 1.5vh;
   display: flex;
   justify-content: center;
@@ -132,8 +132,8 @@
 
  /* home */
  #Home {
-  height: 110vh;
-  width: 110vw;
+  height: 100dvh;
+  width: 100dvw;
   display: flex;
   /* justify-content: center; */
   align-items: center;
@@ -174,7 +174,7 @@
 
  #Services {
   /* height: 100vh; */
-  width: 110vw;
+  width: 100dvw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -182,7 +182,7 @@
 
  #Services #ServicesAbout {
   height: 35vh;
-  width: 80vw;
+  width: 80dvw;
   text-align: justify;
   display: flex;
   flex-direction: column;
@@ -213,7 +213,7 @@
   align-items: center;
   color: white;
   height: 50%;
-  width: 50vw;
+  width: 50dvw;
   background-color: rgb(21, 21, 57);
   border-radius: 10px;
   margin: 10px 0;
@@ -263,7 +263,7 @@
  /* Projects */
  #Projects {
   height: max-content;
-  width: 110vw;
+  width: 100dvw;
  }
 
  #Projects>h3 {
@@ -280,7 +280,7 @@
  }
 
  #ProjectsList>div {
-  width: 100vw;
+  width: 100dvw;
   display: flex;
   flex-direction: column;
   box-shadow: 0 0 1px black;
@@ -316,7 +316,7 @@
   overflow-x: hidden;
   overflow-y: scroll;
   height: 200px;
-  width: 100vw;
+  width: 100dvw;
   background-color: black;
  }
 
@@ -346,7 +346,7 @@
  #AboutMe {
   padding-top: 15vh;
   height: max-content;
-  width: 110vw;
+  width: 100dvw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -354,21 +354,21 @@
 
  #AboutMe>#photo {
   height: 30vh;
-  width: 46vw;
+  width: 46dvw;
   border: 5px solid red;
   margin-bottom: 5vh;
  }
 
  #AboutMe img {
   height: 30vh;
-  width: 48vw;
+  width: 48dvw;
   border: 2vw solid white;
   transform: translate(2vh, -3vh);
  }
 
  #AboutMe>#details {
   height: 50%;
-  width: 100vw;
+  width: 100dvw;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -394,7 +394,7 @@
  /* Contact */
  #Contact {
   height: 80vh;
-  width: 110vw;
+  width: 100dvw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -408,7 +408,7 @@
  }
 
  #contactDetails {
-  width: 100vw;
+  width: 100dvw;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -439,7 +439,7 @@
   margin-bottom: 35vh;
   color: white;
   height: 20vh;
-  width: 110vw;
+  width: 100dvw;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
